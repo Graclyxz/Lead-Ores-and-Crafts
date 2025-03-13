@@ -20,9 +20,9 @@ public class ModMaterials {
 
     public interface Armor {
 
-        /*ArmorMaterial SILVER = new ArmorMaterial(18, createMap(new int[]{2, 5, 4, 2, 5}),
-                16, SoundEvents.ARMOR_EQUIP_GOLD, 0f, 0f,
-                ModTags.Items.SILVER_INGOT, createAsset("silver"));*/
+        ArmorMaterial LEAD = new ArmorMaterial(15, createMap(new int[]{2, 4, 3, 1, 4}),
+                14, SoundEvents.ARMOR_EQUIP_IRON, 0f, 0f,
+                ModTags.Items.LEAD_INGOT, createAsset("lead"));
 
         private static ResourceKey<EquipmentAsset> createAsset(String name) {
             return ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
@@ -36,8 +36,8 @@ public class ModMaterials {
     }
 
     public interface Tool {
-        /*ToolMaterial SILVER = new ToolMaterial(BlockTags.INCORRECT_FOR_STONE_TOOL,
-                350, 8f, 0f, 16,
-                ModTags.Items.SILVER_INGOT);*/
+        ToolMaterial LEAD = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL,
+                250, 6f, 0f, 14,
+                ModTags.Items.LEAD_INGOT);
     }
 }
